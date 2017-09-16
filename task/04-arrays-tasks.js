@@ -516,7 +516,7 @@ function distinct(arr) {
  */
 function group(array, keySelector, valueSelector) {
     return array.reduce((a, v) => {
-        let arr = a.get(keySelector(v)) || [];
+        var arr = a.get(keySelector(v)) || [];
         arr.push(valueSelector(v));
         a.set(keySelector(v), arr);
         return a;
@@ -578,8 +578,8 @@ function getElementByIndexes(arr, indexes) {
  * 
  */
 function swapHeadAndTail(arr) {
-    let h = arr.length / 2;
-    let tail = arr.splice(-h, h).concat(arr);
+    var h = arr.length / 2;
+    var tail = arr.splice(-h, h).concat(arr);
     return tail.concat(tail.splice(h, h));
 }
 
