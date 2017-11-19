@@ -105,7 +105,7 @@ function getRegexForSSN() {
  *  - Valid passwords will only be alphanumeric characters.
  *
  * @param {number} minLength
- * @return {Regex}
+ * @return {RegExp}
  *
  * @example
  *   let validator = getPasswordValidator(6);
